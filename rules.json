@@ -1,0 +1,64 @@
+[
+  {
+    "predicate": "All",
+    "conditions": [
+      {
+        "field": "subject",
+        "predicate": "Contains",
+        "value": "Your Telephone Bill generated"
+      },
+      {
+        "field": "date received",
+        "predicate": "Less than",
+        "value": 31
+      }
+    ],
+    "actions": [
+      "Move Message Bill"
+    ]
+  },
+  {
+    "predicate": "Any",
+    "conditions": [
+      {
+        "field": "sender",
+        "predicate": "Contains",
+        "value": "naukrialerts@naukri.com"
+      }
+    ],
+    "actions": [
+      "Mark as Unread"
+    ]
+  },
+  {
+    "predicate": "All",
+    "conditions": [
+      {
+        "field": "message",
+        "predicate": "Contains",
+        "value": "Due"
+      }
+    ],
+    "actions": [
+      "Move Message Payment_due"
+    ]
+  },
+  {
+    "predicate": "Any",
+    "conditions": [
+      {
+        "field": "message",
+        "predicate": "Contains",
+        "value": "Your application was sent"
+      },
+      {
+        "field": "sender",
+        "predicate": "Contains",
+        "value": "jobs-noreply@linkedin.com"
+      }
+    ],
+    "actions": [
+      "Mark as Read"
+    ]
+  }
+]
