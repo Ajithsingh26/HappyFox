@@ -16,8 +16,8 @@ This project is a Python script that integrates with Gmail API to fetch and proc
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/gmail-api-integration.git
-    cd gmail-api-integration
+    git clone https://github.com/Ajithsingh26/HappyFox.git
+    cd HappyFox
     ```
 
 2. Create and activate a virtual environment (optional):
